@@ -11,14 +11,24 @@ export default function Home() {
       <PageDefault>
         <div style={{ background: "#141414" }}>
             <BannerMain 
-            videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-            url={dadosIniciais.categorias[0].videos[0].url}
-            videoDescription={"O que é Front-end? Trabalhando na área"}
+                videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+                url={dadosIniciais.categorias[0].videos[0].url}
+                videoDescription={"O que é Front-end? Trabalhando na área"}
             />
     
             <Carousel 
-            ignoreFirstVideo
-            category={dadosIniciais.categorias[0]}
+                ignoreFirstVideo
+                category={dadosIniciais.categorias[0]}
+            />
+
+            <Carousel 
+                ignoreFirstVideo
+                category={dadosIniciais.categorias[1]}
+            />
+
+            <Carousel 
+                ignoreFirstVideo
+                category={dadosIniciais.categorias[2]}
             />
         </div>
       </PageDefault>
